@@ -1,55 +1,55 @@
 ﻿@model IEnumerable<VillaNumber>
 
-<div class="w-100 card border-0 p-4">
-    <div class="card-header bg-success bg-gradient ml-0 py-3">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h2 class="text-white py-2">Villa Number List</h2>
+<div class="container py-5">
+    <div class="card bg-dark text-light shadow-lg rounded-4 border-0">
+        <div class="card-header py-4 rounded-top-4" style="background: linear-gradient(135deg, #0d6efd, #6610f2);">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="text-white">Villa Number List</h2>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="card-body border p-4">
-        <div class="row pb-3">
-            <div class="col-6 offset-6 text-end">
-                <a asp-controller="VillaNumber" asp-action="Create" class="btn btn-secondary">
-                    <i class="bi bi-plus-circle"></i> Create New Villa Number
-                </a>
+        <div class="card-body p-4">
+            <div class="row pb-3">
+                <div class="col-12 text-end">
+                    <a asp-controller="VillaNumber" asp-action="Create" class="btn btn-outline-info">
+                        <i class="bi bi-plus-circle"></i> Create New Villa Number
+                    </a>
+                </div>
             </div>
-        </div>
 
-        <table class="table table-bordered table-striped">
-            <thead>
-                <tr>
-                    <th>
-                        Villa Name
-                    </th>
-                    <th>Villa Number</th>
-                    <th>Speical Details</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var obj in Model)
-                {
+            <table class="table table-dark table-striped table-hover">
+                <thead>
                     <tr>
-                        <td>@obj.Villa.Name</td>
-                        <td>@obj.Villa_Number</td>
-                        <td>@obj.SpecialDetails</td>
-                        <td>
-                            <div class="w-75 btn-group" role="group">
-                                <a asp-controller="VillaNumber" asp-action="Update" asp-route-villaNumberId="@obj.Villa_Number"
-                                   class="btn btn-success mx-2">
-                                    <i class="bi bi-pencil-square"></i> Edit
-                                </a>
-                                <a asp-controller="VillaNumber" asp-action="Delete" asp-route-villaNumberId="@obj.Villa_Number"
-                                   class="btn btn-danger mx-2">
-                                    <i class="bi bi-trash-fill"></i> Delete
-                                </a>
-                            </div>
-                        </td>
+                        <th>Villa Name</th>
+                        <th>Villa Number</th>
+                        <th>Special Details</th>
+                        <th></th>
                     </tr>
-                }
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                    @foreach (var obj in Model)
+                    {
+                        <tr>
+                            <td>@obj.Villa.Name</td>
+                            <td>@obj.Villa_Number</td>
+                            <td>@obj.SpecialDetails</td>
+                            <td>
+                                <div class="btn-group" role="group">
+                                    <a asp-controller="VillaNumber" asp-action="Update" asp-route-villaNumberId="@obj.Villa_Number"
+                                       class="btn btn-sm btn-outline-warning mx-1">
+                                        <i class="bi bi-pencil-square"></i> Edit
+                                    </a>
+                                    <a asp-controller="VillaNumber" asp-action="Delete" asp-route-villaNumberId="@obj.Villa_Number"
+                                       class="btn btn-sm btn-outline-danger mx-1">
+                                        <i class="bi bi-trash-fill"></i> Delete
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>

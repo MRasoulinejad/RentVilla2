@@ -1,54 +1,44 @@
 ﻿@model LoginVM
 
-<div class="container pt-5">
-    <div class="card shadow border">
-        <div class="card-header bg-success bg-gradient ml-0 py-4">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h2 class="py-2 text-white">Login</h2>
-                </div>
-            </div>
-        </div>
+<div class="container" style="min-height: calc(100vh - 150px); display: flex; justify-content: center; align-items: center;">
+    <div class="card bg-dark text-light shadow-lg border-0 rounded-5" style="width: 450px;">
         <div class="card-body p-4">
-            <div class="row">
-                <div class="col-md-12">
-                    <section>
-                        <form method="post">
-                            <input asp-for="RedirectUrl" hidden />
-                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                            <div class="form-floating mb-3">
-                                <input asp-for="Email" class="form-control" aria-required="true" />
-                                <label asp-for="Email" class="form-label"></label>
-                                <span asp-validation-for="Email" class="text-danger"></span>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input asp-for="Password" class="form-control" aria-required="true" />
-                                <label asp-for="Password" class="form-label"></label>
-                                <span asp-validation-for="Password" class="text-danger"></span>
-                            </div>
-                            <div class="checkbox mb-3">
-                                <input asp-for="RememberMe" class="form-check-input" />
+            <div class="text-center mb-3">
+                <i class="bi bi-house-door-fill text-warning" style="font-size: 3rem;"></i>
+                <h3 class="mt-2">Welcome to RentVilla</h3>
+                <p class="text-muted">Sign in to continue</p>
+            </div>
+            <form method="post">
+                <input asp-for="RedirectUrl" hidden />
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-2"></div>
 
-                                <label class="form-label">
-                                    Remember Me
-                                </label>
-                            </div>
-                            <div>
-                                <button type="submit" class="w-100 btn btn-lg btn-outline-success">Log in</button>
-                            </div>
-                            <div class="d-flex justify-content-between pt-2">
-                                <p>
-                                    <a asp-action="ForgotPassword">Forgot your password?</a>
-                                </p>
-                                <p>
-                                    <a asp-action="Register" asp-route-returnUrl="@Model.RedirectUrl">Register as a new user</a>
-                                </p>
-                            </div>
-                        </form>
-                    </section>
+                <div class="mb-3">
+                    <label asp-for="Email" class="form-label">Email address</label>
+                    <input asp-for="Email" type="email" class="form-control bg-transparent text-light border-secondary" placeholder="name@example.com" aria-required="true" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
                 </div>
 
-            </div>
+                <div class="mb-3">
+                    <label asp-for="Password" class="form-label">Password</label>
+                    <input asp-for="Password" type="password" class="form-control bg-transparent text-light border-secondary" placeholder="Password" aria-required="true" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+
+                <div class="form-check mb-3">
+                    <input asp-for="RememberMe" class="form-check-input" />
+                    <label class="form-check-label" asp-for="RememberMe">
+                        Remember Me
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-warning w-100 btn-lg mb-3">Log In</button>
+
+                <div class="text-center">
+                    <a asp-action="ForgotPassword" class="text-info d-block mb-1">Forgot your password?</a>
+                    <span class="text-muted">Don't have an account? </span>
+                    <a asp-action="Register" asp-route-returnUrl="@Model.RedirectUrl" class="text-info">Sign up now</a>
+                </div>
+            </form>
         </div>
     </div>
 </div>
