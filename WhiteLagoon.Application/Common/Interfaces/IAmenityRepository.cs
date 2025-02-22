@@ -4,9 +4,9 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
-using WhiteLagoon.Domain.Entities;
+using RentVilla.Domain.Entities;
 
-namespace WhiteLagoon.Application.Common.Interfaces
+namespace RentVilla.Application.Common.Interfaces
 {
     public interface IAmenityRepository : IRepository<Amenity>
     {

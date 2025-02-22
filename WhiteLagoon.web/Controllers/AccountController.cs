@@ -2,14 +2,14 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Text.Encodings.Web;
-using WhiteLagoon.Application.Common.Interfaces;
-using WhiteLagoon.Application.Common.Utility;
-using WhiteLagoon.Application.Services.Interface;
-using WhiteLagoon.Domain.Entities;
-using WhiteLagoon.Infrastructure.Repository;
-using WhiteLagoon.web.ViewModels;
+using RentVilla.Application.Common.Interfaces;
+using RentVilla.Application.Common.Utility;
+using RentVilla.Application.Services.Interface;
+using RentVilla.Domain.Entities;
+using RentVilla.Infrastructure.Repository;
+using RentVilla.web.ViewModels;
 
-namespace WhiteLagoon.web.Controllers
+namespace RentVilla.web.Controllers
 {
     public class AccountController : Controller
     {

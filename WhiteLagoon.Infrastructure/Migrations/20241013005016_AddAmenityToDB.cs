@@ -4,7 +4,7 @@
 
 #pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
 
-namespace WhiteLagoon.Infrastructure.Migrations
+namespace RentVilla.Infrastructure.Migrations
 {
     /// <inheritdoc />
     public partial class AddAmenityToDB : Migration

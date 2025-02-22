@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using WhiteLagoon.Infrastructure.Data;
+using RentVilla.Infrastructure.Data;
 
 #nullable disable
 
-namespace WhiteLagoon.Infrastructure.Migrations
+namespace RentVilla.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDBContext))]
     [Migration("20241006050049_SeedVillaToDB")]
@@ -25,7 +25,7 @@ namespace WhiteLagoon.Infrastructure.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("WhiteLagoon.Domain.Entities.Villa", b =>
+            modelBuilder.Entity("RentVilla.Domain.Entities.Villa", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

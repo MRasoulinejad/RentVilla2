@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WhiteLagoon.Domain.Entities;
+using RentVilla.Domain.Entities;
 
-namespace WhiteLagoon.Application.Services.Interface
+namespace RentVilla.Application.Services.Interface
 {
     public interface IVillaNumberService
     {

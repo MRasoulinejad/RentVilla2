@@ -2,13 +2,13 @@
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
-using WhiteLagoon.Application.Common.Interfaces;
-using WhiteLagoon.Application.Services.Interface;
-using WhiteLagoon.Domain.Entities;
-using WhiteLagoon.Infrastructure.Data;
-using WhiteLagoon.web.ViewModels;
+using RentVilla.Application.Common.Interfaces;
+using RentVilla.Application.Services.Interface;
+using RentVilla.Domain.Entities;
+using RentVilla.Infrastructure.Data;
+using RentVilla.web.ViewModels;
 
-namespace WhiteLagoon.web.Controllers
+namespace RentVilla.web.Controllers
 {
     public class VillaNumberController : Controller
     {

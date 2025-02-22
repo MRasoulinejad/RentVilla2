@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace WhiteLagoon.web.ViewModels
+namespace RentVilla.web.ViewModels
 {
     public class LoginVM
     {

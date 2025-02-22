@@ -6,11 +6,11 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
-using WhiteLagoon.Application.Common.Interfaces;
-using WhiteLagoon.Application.Common.Utility;
-using WhiteLagoon.Domain.Entities;
+using RentVilla.Application.Common.Interfaces;
+using RentVilla.Application.Common.Utility;
+using RentVilla.Domain.Entities;
 
-namespace WhiteLagoon.Infrastructure.Data
+namespace RentVilla.Infrastructure.Data
 {
     public class DbInitializer : IDbInitializer
     {

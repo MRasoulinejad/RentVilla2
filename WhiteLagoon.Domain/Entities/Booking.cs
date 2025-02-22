@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WhiteLagoon.Domain.Entities
+namespace RentVilla.Domain.Entities
 {
     public class Booking
     {

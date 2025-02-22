@@ -6,9 +6,9 @@ using System.Net.Mail;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
-using WhiteLagoon.Application.Services.Interface;
+using RentVilla.Application.Services.Interface;
 
-namespace WhiteLagoon.Application.Services.Implementation
+namespace RentVilla.Application.Services.Implementation
 {
     public class SmtpEmailService : ISmtpEmailService
     {

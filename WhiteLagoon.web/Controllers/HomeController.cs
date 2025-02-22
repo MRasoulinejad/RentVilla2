@@ -1,13 +1,13 @@
 using Microsoft.AspNetCore.Mvc;
 using Syncfusion.Presentation;
 using System.Diagnostics;
-using WhiteLagoon.Application.Common.Interfaces;
-using WhiteLagoon.Application.Common.Utility;
-using WhiteLagoon.Application.Services.Interface;
-using WhiteLagoon.web.Models;
-using WhiteLagoon.web.ViewModels;
+using RentVilla.Application.Common.Interfaces;
+using RentVilla.Application.Common.Utility;
+using RentVilla.Application.Services.Interface;
+using RentVilla.web.Models;
+using RentVilla.web.ViewModels;
 
-namespace WhiteLagoon.web.Controllers
+namespace RentVilla.web.Controllers
 {
     public class HomeController : Controller
     {

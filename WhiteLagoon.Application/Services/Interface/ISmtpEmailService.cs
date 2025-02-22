@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WhiteLagoon.Application.Services.Interface
+namespace RentVilla.Application.Services.Interface
 {
     public  interface ISmtpEmailService
     {

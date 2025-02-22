@@ -3,14 +3,14 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Stripe;
 using Syncfusion.Licensing;
-using WhiteLagoon.Application.Common.Interfaces;
-using WhiteLagoon.Application.Contract;
-using WhiteLagoon.Application.Services.Implementation;
-using WhiteLagoon.Application.Services.Interface;
-using WhiteLagoon.Domain.Entities;
-using WhiteLagoon.Infrastructure.Data;
-using WhiteLagoon.Infrastructure.Emails;
-using WhiteLagoon.Infrastructure.Repository;
+using RentVilla.Application.Common.Interfaces;
+using RentVilla.Application.Contract;
+using RentVilla.Application.Services.Implementation;
+using RentVilla.Application.Services.Interface;
+using RentVilla.Domain.Entities;
+using RentVilla.Infrastructure.Data;
+using RentVilla.Infrastructure.Emails;
+using RentVilla.Infrastructure.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 

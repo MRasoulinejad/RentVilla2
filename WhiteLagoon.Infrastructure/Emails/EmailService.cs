@@ -7,9 +7,9 @@ using System.Linq;
 using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
-using WhiteLagoon.Application.Contract;
+using RentVilla.Application.Contract;
 
-namespace WhiteLagoon.Infrastructure.Emails
+namespace RentVilla.Infrastructure.Emails
 {
     public class EmailService : IEmailService
     {

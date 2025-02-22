@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WhiteLagoon.Domain.Entities;
-using WhiteLagoon.web.ViewModels;
+using RentVilla.Domain.Entities;
+using RentVilla.web.ViewModels;
 
-namespace WhiteLagoon.Application.Common.Utility
+namespace RentVilla.Application.Common.Utility
 {
     public static class SD
     {

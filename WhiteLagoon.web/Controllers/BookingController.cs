@@ -10,14 +10,14 @@ using Syncfusion.DocIORenderer;
 using Syncfusion.Drawing;
 using Syncfusion.Pdf;
 using System.Security.Claims;
-using WhiteLagoon.Application.Common.Interfaces;
-using WhiteLagoon.Application.Common.Utility;
-using WhiteLagoon.Application.Contract;
-using WhiteLagoon.Application.Services.Interface;
-using WhiteLagoon.Domain.Entities;
-using WhiteLagoon.Infrastructure.Repository;
+using RentVilla.Application.Common.Interfaces;
+using RentVilla.Application.Common.Utility;
+using RentVilla.Application.Contract;
+using RentVilla.Application.Services.Interface;
+using RentVilla.Domain.Entities;
+using RentVilla.Infrastructure.Repository;
 
-namespace WhiteLagoon.Web.Controllers
+namespace RentVilla.Web.Controllers
 {
     public class BookingController : Controller
     {

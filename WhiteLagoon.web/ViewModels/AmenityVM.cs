@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using WhiteLagoon.Domain.Entities;
+using RentVilla.Domain.Entities;
 
-namespace WhiteLagoon.web.ViewModels
+namespace RentVilla.web.ViewModels
 {
     public class AmenityVM
     {

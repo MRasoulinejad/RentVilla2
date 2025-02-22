@@ -4,11 +4,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WhiteLagoon.Application.Common.Interfaces;
-using WhiteLagoon.Application.Services.Interface;
-using WhiteLagoon.Domain.Entities;
+using RentVilla.Application.Common.Interfaces;
+using RentVilla.Application.Services.Interface;
+using RentVilla.Domain.Entities;
 
-namespace WhiteLagoon.Application.Services.Implementation
+namespace RentVilla.Application.Services.Implementation
 {
     public class AmenityService : IAmenityService
     {

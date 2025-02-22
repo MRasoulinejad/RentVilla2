@@ -1,4 +1,4 @@
-﻿namespace WhiteLagoon.Web.ViewModels
+﻿namespace RentVilla.Web.ViewModels
 {
     public class LineChartDto
     {

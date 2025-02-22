@@ -1,11 +1,11 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using WhiteLagoon.Application.Common.Interfaces;
-using WhiteLagoon.Application.Services.Interface;
-using WhiteLagoon.Domain.Entities;
-using WhiteLagoon.Infrastructure.Data;
+using RentVilla.Application.Common.Interfaces;
+using RentVilla.Application.Services.Interface;
+using RentVilla.Domain.Entities;
+using RentVilla.Infrastructure.Data;
 
-namespace WhiteLagoon.web.Controllers
+namespace RentVilla.web.Controllers
 {
     [Authorize]
     public class VillaController : Controller

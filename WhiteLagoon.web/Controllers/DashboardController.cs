@@ -1,12 +1,12 @@
 ﻿
 using Microsoft.AspNetCore.Mvc;
 using Stripe;
-using WhiteLagoon.Application.Common.Interfaces;
-using WhiteLagoon.Application.Common.Utility;
-using WhiteLagoon.Application.Services.Interface;
-using WhiteLagoon.web.ViewModels;
+using RentVilla.Application.Common.Interfaces;
+using RentVilla.Application.Common.Utility;
+using RentVilla.Application.Services.Interface;
+using RentVilla.web.ViewModels;
 
-namespace WhiteLagoon.Web.Controllers
+namespace RentVilla.Web.Controllers
 {
     public class DashboardController : Controller
     {

@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WhiteLagoon.Application.Common.Interfaces;
-using WhiteLagoon.Infrastructure.Data;
+using RentVilla.Application.Common.Interfaces;
+using RentVilla.Infrastructure.Data;
 
-namespace WhiteLagoon.Infrastructure.Repository
+namespace RentVilla.Infrastructure.Repository
 {
     public class UnitOfWork : IUnitOfWork
     {

@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using WhiteLagoon.Infrastructure.Data;
+using RentVilla.Infrastructure.Data;
 
 #nullable disable
 
-namespace WhiteLagoon.Infrastructure.Migrations
+namespace RentVilla.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDBContext))]
     [Migration("20241013005016_AddAmenityToDB")]
@@ -25,7 +25,7 @@ namespace WhiteLagoon.Infrastructure.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("WhiteLagoon.Domain.Entities.Amenity", b =>
+            modelBuilder.Entity("RentVilla.Domain.Entities.Amenity", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -118,7 +118,7 @@ namespace WhiteLagoon.Infrastructure.Migrations
                         });
                 });
 
-            modelBuilder.Entity("WhiteLagoon.Domain.Entities.Villa", b =>
+            modelBuilder.Entity("RentVilla.Domain.Entities.Villa", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -189,7 +189,7 @@ namespace WhiteLagoon.Infrastructure.Migrations
                         });
                 });
 
-            modelBuilder.Entity("WhiteLagoon.Domain.Entities.VillaNumber", b =>
+            modelBuilder.Entity("RentVilla.Domain.Entities.VillaNumber", b =>
                 {
                     b.Property<int>("Villa_Number")
                         .HasColumnType("int");
@@ -249,9 +249,9 @@ namespace WhiteLagoon.Infrastructure.Migrations
                         });
                 });
 
-            modelBuilder.Entity("WhiteLagoon.Domain.Entities.Amenity", b =>
+            modelBuilder.Entity("RentVilla.Domain.Entities.Amenity", b =>
                 {
-                    b.HasOne("WhiteLagoon.Domain.Entities.Villa", "Villa")
+                    b.HasOne("RentVilla.Domain.Entities.Villa", "Villa")
                         .WithMany()
                         .HasForeignKey("VillaId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -260,9 +260,9 @@ namespace WhiteLagoon.Infrastructure.Migrations
                     b.Navigation("Villa");
                 });
 
-            modelBuilder.Entity("WhiteLagoon.Domain.Entities.VillaNumber", b =>
+            modelBuilder.Entity("RentVilla.Domain.Entities.VillaNumber", b =>
                 {
-                    b.HasOne("WhiteLagoon.Domain.Entities.Villa", "Villa")
+                    b.HasOne("RentVilla.Domain.Entities.Villa", "Villa")
                         .WithMany()
                         .HasForeignKey("VillaId")
                         .OnDelete(DeleteBehavior.Cascade)

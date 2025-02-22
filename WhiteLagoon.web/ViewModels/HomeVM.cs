@@ -1,6 +1,6 @@
-﻿using WhiteLagoon.Domain.Entities;
+﻿using RentVilla.Domain.Entities;
 
-namespace WhiteLagoon.web.ViewModels
+namespace RentVilla.web.ViewModels
 {
     public class HomeVM
     {

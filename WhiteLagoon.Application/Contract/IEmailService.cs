@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WhiteLagoon.Application.Contract
+namespace RentVilla.Application.Contract
 {
     public interface IEmailService
     {

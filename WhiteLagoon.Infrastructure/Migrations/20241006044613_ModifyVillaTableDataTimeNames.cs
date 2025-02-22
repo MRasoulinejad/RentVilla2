@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace WhiteLagoon.Infrastructure.Migrations
+namespace RentVilla.Infrastructure.Migrations
 {
     /// <inheritdoc />
     public partial class ModifyVillaTableDataTimeNames : Migration
